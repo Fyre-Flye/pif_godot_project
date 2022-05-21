@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://UI/bg_pattern.jpg" type="Texture" id=1]
 [ext_resource path="res://UI/possum.png" type="Texture" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://Music and Sounds/Hurt.wav" type="AudioStream" id=9]
 [ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=10]
 [ext_resource path="res://Music and Sounds/Menu Select.wav" type="AudioStream" id=11]
+[ext_resource path="res://Music and Sounds/Unpause.wav" type="AudioStream" id=12]
+[ext_resource path="res://Music and Sounds/Pause.wav" type="AudioStream" id=13]
+[ext_resource path="res://Music and Sounds/Mother 1Mother 2 Victory Theme Mashu.wav" type="AudioStream" id=14]
+[ext_resource path="res://Music and Sounds/EnemyDie.wav" type="AudioStream" id=15]
 
 [sub_resource type="ShaderMaterial" id=6]
 shader = ExtResource( 3 )
@@ -61,6 +65,21 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color( 1, 1, 1, 1 )
 
+[sub_resource type="Animation" id=14]
+resource_name = "EnemyDied"
+tracks/0/type = "value"
+tracks/0/path = NodePath("BattleBG/Enemy:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
 [sub_resource type="Animation" id=10]
 length = 0.001
 tracks/0/type = "value"
@@ -99,6 +118,18 @@ tracks/2/keys = {
 "update": 0,
 "values": [ Vector2( 0, 0 ) ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("ActionPanel/Actions:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=12]
 resource_name = "Screenshake"
@@ -130,6 +161,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "mini_screen_shake"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -2, -2 ), Vector2( 10, 10 ), Vector2( -4, 10 ), Vector2( 10, -10 ), Vector2( 2, -8 ), Vector2( 0, 0 ) ]
 }
 
 [node name="Battle" type="Control"]
@@ -185,38 +232,6 @@ value = 50.0
 percent_visible = false
 
 [node name="EnemyContainer" type="VBoxContainer" parent="BattleBG/Enemy"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-
-[node name="Enemy" type="TextureRect" parent="BattleBG/Enemy"]
-modulate = Color( 1, 1, 1, 0 )
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_left = -292.857
-margin_top = -65.7143
-margin_right = 207.143
-margin_bottom = 434.286
-rect_scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 2 )
-
-[node name="ProgressBarEnemy" type="ProgressBar" parent="BattleBG/Enemy/Enemy"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -271.429
-margin_top = 242.857
-margin_right = 278.571
-margin_bottom = 313.857
-custom_styles/fg = SubResource( 1 )
-custom_styles/bg = SubResource( 2 )
-step = 1.0
-value = 50.0
-percent_visible = false
-
-[node name="EnemyContainer" type="VBoxContainer" parent="BattleBG/Enemy/Enemy"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -403,9 +418,11 @@ volume_db = -15.0
 autoplay = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/EnemyDied = SubResource( 14 )
 anims/RESET = SubResource( 10 )
 anims/Screenshake = SubResource( 12 )
 anims/enemy_damaged = SubResource( 11 )
+anims/mini_screen_shake = SubResource( 13 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -423,5 +440,19 @@ stream = ExtResource( 8 )
 [node name="RunAway" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 
+[node name="ActionConfirm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="Defended" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -20.0
+
+[node name="EnemyDied" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+
 [connection signal="pressed" from="ActionPanel/Actions/Attack" to="." method="_on_Attack_pressed"]
+[connection signal="pressed" from="ActionPanel/Actions/Defend" to="." method="_on_Defend_pressed"]
 [connection signal="pressed" from="ActionPanel/Actions/Run" to="." method="_on_Run_pressed"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Mother 1Mother 2 Victory Theme Mashu.wav-4e600122e80133bf4586bc48c4512e70.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/Mother 1Mother 2 Victory Theme Mashu.wav"
+dest_files=[ "res://.import/Mother 1Mother 2 Victory Theme Mashu.wav-4e600122e80133bf4586bc48c4512e70.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
