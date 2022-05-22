@@ -8,4 +8,4 @@ script = ExtResource( 2 )
 name = "GABIRU"
 texture = ExtResource( 1 )
 health = 100
-damage = 20
+damage = 25

@@ -1,10 +1,10 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://UI/bg_pattern.jpg" type="Texture" id=1]
 [ext_resource path="res://UI/possum.png" type="Texture" id=2]
 [ext_resource path="res://Shaders/BG-Distorcion.gdshader" type="Shader" id=3]
 [ext_resource path="res://Fonts/eb_dynamic_font.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Music and Sounds/Mr Batty Twist (Restored)    MOTHER.wav" type="AudioStream" id=5]
+[ext_resource path="res://Music and Sounds/Earthbound  Otherworldly Fo.wav" type="AudioStream" id=5]
 [ext_resource path="res://src/Battle.gd" type="Script" id=6]
 [ext_resource path="res://src/Gabiru.tres" type="Resource" id=7]
 [ext_resource path="res://Music and Sounds/Swipe.wav" type="AudioStream" id=8]
@@ -15,6 +15,9 @@
 [ext_resource path="res://Music and Sounds/Pause.wav" type="AudioStream" id=13]
 [ext_resource path="res://Music and Sounds/Mother 1Mother 2 Victory Theme Mashu.wav" type="AudioStream" id=14]
 [ext_resource path="res://Music and Sounds/EnemyDie.wav" type="AudioStream" id=15]
+[ext_resource path="res://Music and Sounds/Mother (NES) Music   Game Ove.wav" type="AudioStream" id=16]
+[ext_resource path="res://Fonts/apple_kid_dynamic.tres" type="DynamicFont" id=18]
+[ext_resource path="res://Music and Sounds/Menu Move.wav" type="AudioStream" id=19]
 
 [sub_resource type="ShaderMaterial" id=6]
 shader = ExtResource( 3 )
@@ -38,6 +41,25 @@ border_color = Color( 1, 0, 0, 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="GDScript" id=15]
+script/source = "extends Panel
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 1, 1, 1, 1 )
@@ -245,6 +267,7 @@ margin_top = -18.54
 margin_right = 161.0
 margin_bottom = 22.46
 custom_styles/panel = SubResource( 3 )
+script = SubResource( 15 )
 
 [node name="Actions" type="HBoxContainer" parent="ActionPanel"]
 anchor_left = 0.5
@@ -257,15 +280,6 @@ margin_right = 155.0
 margin_bottom = 17.0
 alignment = 1
 
-[node name="EnemyText" type="Label" parent="ActionPanel/Actions"]
-visible = false
-margin_left = 56.0
-margin_top = 13.0
-margin_right = 188.0
-margin_bottom = 27.0
-size_flags_horizontal = 6
-text = "Possum Draws Near!"
-
 [node name="Attack" type="Button" parent="ActionPanel/Actions"]
 margin_right = 58.0
 margin_bottom = 34.0
@@ -275,7 +289,7 @@ size_flags_horizontal = 3
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
@@ -284,7 +298,7 @@ text = " ATTACK "
 
 [node name="Defend" type="Button" parent="ActionPanel/Actions"]
 margin_left = 62.0
-margin_right = 120.0
+margin_right = 121.0
 margin_bottom = 34.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
@@ -292,7 +306,7 @@ size_flags_horizontal = 3
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
@@ -300,8 +314,8 @@ enabled_focus_mode = 0
 text = " DEFEND "
 
 [node name="Special" type="Button" parent="ActionPanel/Actions"]
-margin_left = 124.0
-margin_right = 190.0
+margin_left = 125.0
+margin_right = 184.0
 margin_bottom = 34.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
@@ -309,7 +323,7 @@ size_flags_horizontal = 3
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
@@ -317,8 +331,8 @@ enabled_focus_mode = 0
 text = " SPECIAL "
 
 [node name="Items" type="Button" parent="ActionPanel/Actions"]
-margin_left = 194.0
-margin_right = 250.0
+margin_left = 188.0
+margin_right = 247.0
 margin_bottom = 34.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
@@ -326,7 +340,7 @@ size_flags_horizontal = 3
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
@@ -334,7 +348,7 @@ enabled_focus_mode = 0
 text = " ITEM "
 
 [node name="Run" type="Button" parent="ActionPanel/Actions"]
-margin_left = 254.0
+margin_left = 251.0
 margin_right = 310.0
 margin_bottom = 34.0
 focus_mode = 0
@@ -343,7 +357,7 @@ size_flags_horizontal = 3
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/pressed = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
@@ -382,8 +396,10 @@ margin_left = 7.36
 margin_top = -19.528
 margin_right = 55.36
 margin_bottom = -0.528
-custom_fonts/font = ExtResource( 4 )
-text = "PLAYER"
+custom_fonts/font = ExtResource( 18 )
+text = "PLAYER 1"
+align = 1
+valign = 1
 
 [node name="TextBox" type="Panel" parent="."]
 anchor_right = 1.0
@@ -397,7 +413,7 @@ margin_left = 8.0
 margin_top = 8.0
 margin_right = -8.0
 margin_bottom = -8.0
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 18 )
 text = "A POSSUM DRAWS NEAR!"
 
 [node name="Ticker" type="Label" parent="TextBox"]
@@ -414,7 +430,7 @@ text = "..."
 
 [node name="OST" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
-volume_db = -15.0
+volume_db = -5.0
 autoplay = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -448,10 +464,17 @@ stream = ExtResource( 13 )
 
 [node name="Victory" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
-volume_db = -20.0
+volume_db = -15.0
 
 [node name="EnemyDied" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
+
+[node name="Lost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -15.0
+
+[node name="SelectionMove" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 19 )
 
 [connection signal="pressed" from="ActionPanel/Actions/Attack" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="ActionPanel/Actions/Defend" to="." method="_on_Defend_pressed"]
