@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://UI/bg_pattern.jpg" type="Texture" id=1]
 [ext_resource path="res://UI/possum.png" type="Texture" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Music and Sounds/Mother 1Mother 2 Victory Theme Mashu.wav" type="AudioStream" id=14]
 [ext_resource path="res://Music and Sounds/EnemyDie.wav" type="AudioStream" id=15]
 [ext_resource path="res://Music and Sounds/Mother (NES) Music   Game Ove.wav" type="AudioStream" id=16]
+[ext_resource path="res://Music and Sounds/SMAAAAS.wav" type="AudioStream" id=17]
 [ext_resource path="res://Fonts/apple_kid_dynamic.tres" type="DynamicFont" id=18]
 [ext_resource path="res://Music and Sounds/Menu Move.wav" type="AudioStream" id=19]
 
@@ -476,6 +477,12 @@ volume_db = -15.0
 [node name="SelectionMove" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
 
+[node name="Critical" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
+volume_db = -5.0
+
 [connection signal="pressed" from="ActionPanel/Actions/Attack" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="ActionPanel/Actions/Defend" to="." method="_on_Defend_pressed"]
+[connection signal="pressed" from="ActionPanel/Actions/Special" to="." method="_on_Special_pressed"]
+[connection signal="pressed" from="ActionPanel/Actions/Items" to="." method="_on_Items_pressed"]
 [connection signal="pressed" from="ActionPanel/Actions/Run" to="." method="_on_Run_pressed"]

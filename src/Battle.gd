@@ -131,16 +131,19 @@ func enemy_turn():
 		
 	if current_player_health == 0:
 		$PlayerPanel.modulate = Color(1, 0, 0)
-		display_text("CRITICAL DAMAGE!")
-		
 		$TextBox.modulate = Color(1, 0, 0)
+		display_text("CRITICAL DAMAGE!")
+		$AnimationPlayer.play("Screenshake")
+		$Critical.play()
 		yield(self, "textbox_closed")
+		
+		$Critical.stop()
 		$Select.play()
 		$OST.stop()
 		display_text("YOU LOST THE BATTLE!")
-		$TextBox.modulate = Color(1, 0, 0)
 		$Lost.play()
 		yield(self, "textbox_closed")
+		$PlayerPanel.hide()
 		$Select.play()
 		yield(get_tree().create_timer(0.25), "timeout")
 		get_tree().quit()
@@ -195,4 +198,13 @@ func Defend():
 	yield(self, "textbox_closed")
 	$Select.play()
 	yield(get_tree().create_timer(0.25), "timeout")
+	enemy_turn()
+
+
+func _on_Special_pressed():
+	$ActionConfirm.play()
+	enemy_turn()
+
+func _on_Items_pressed():
+	$ActionConfirm.play()
 	enemy_turn()
