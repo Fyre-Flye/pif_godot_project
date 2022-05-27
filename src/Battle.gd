@@ -102,7 +102,7 @@ func Run():
 	yield(get_tree().create_timer(0.25), "timeout")
 	$RunAway.play()
 	yield(get_tree().create_timer(0.5), "timeout")
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://Scenes/World.tscn")
 
 func enemy_turn():
 	display_text("%s ADVANCES ON YOU FURIOUSLY"% enemy.name.to_upper())
@@ -132,7 +132,7 @@ func enemy_turn():
 	if current_player_health == 0:
 		$PlayerPanel.modulate = Color(1, 0, 0)
 		$TextBox.modulate = Color(1, 0, 0)
-		display_text("CRITICAL DAMAGE!")
+		display_text("KNOCKED OUT!!!")
 		$AnimationPlayer.play("Screenshake")
 		$Critical.play()
 		yield(self, "textbox_closed")
@@ -185,7 +185,7 @@ func Attack():
 		$Select.play()
 		yield(get_tree().create_timer(0.25), "timeout")
 
-		get_tree().change_scene("res://World.tscn")
+		get_tree().change_scene("res://Scenes/World.tscn")
 	enemy_turn()
 
 func _on_Defend_pressed():
