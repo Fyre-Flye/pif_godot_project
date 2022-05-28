@@ -2,7 +2,6 @@
 * Pedro Lino
 * Gabriel Costa
 * Gustavo Henrique
-* Rafael Lancry
 * Guilherme Lopes
 
 *Este trabalho faz parte da composição da nota de AV2 da disciplina de Programação Imperativa e Funcional*
