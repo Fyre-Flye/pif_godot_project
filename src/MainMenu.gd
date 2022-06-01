@@ -48,3 +48,50 @@ func set_current_selection(_current_selection):
 		selector_three.text = ">"
 	elif _current_selection == 3:
 		selector_four.text = ">"
+
+func _on_StartButton_pressed():
+	get_parent().add_child(first_scene.instance())
+	queue_free()
+
+func _on_LoadButton_pressed():
+	print("Adicionar saves")
+
+
+func _on_OptionsButton_pressed():
+	print("Adicionar opcoes")
+
+
+func _on_ExitButton_pressed():
+	get_tree().quit()
+
+
+func _on_StartButton_mouse_entered():
+	current_selection = 0
+	selector_one.text = ">"
+	selector_two.text = ""
+	selector_three.text = ""
+	selector_four.text = ""
+
+
+func _on_LoadButton_mouse_entered():
+	current_selection = 1
+	selector_one.text = ""
+	selector_two.text = ">"
+	selector_three.text = ""
+	selector_four.text = ""
+
+
+func _on_OptionsButton_mouse_entered():
+	current_selection = 2
+	selector_one.text = ""
+	selector_two.text = ""
+	selector_three.text = ">"
+	selector_four.text = ""
+
+
+func _on_ExitButton_mouse_entered():
+	current_selection = 3
+	selector_one.text = ""
+	selector_two.text = ""
+	selector_three.text = ""
+	selector_four.text = ">"
