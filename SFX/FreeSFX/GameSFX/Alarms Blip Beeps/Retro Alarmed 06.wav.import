@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Alarmed 06.wav-1d7b50b3f8c3f90e58b59b7e4cd17a87.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Alarms Blip Beeps/Retro Alarmed 06.wav"
+dest_files=[ "res://.import/Retro Alarmed 06.wav-1d7b50b3f8c3f90e58b59b7e4cd17a87.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

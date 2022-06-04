@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Block Break 1.wav-21df4e303175a40c67b0582925fe582c.sample"
+
+[deps]
+
+source_file="res://SFX/sfx pack/Block Break 1.wav"
+dest_files=[ "res://.import/Block Break 1.wav-21df4e303175a40c67b0582925fe582c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

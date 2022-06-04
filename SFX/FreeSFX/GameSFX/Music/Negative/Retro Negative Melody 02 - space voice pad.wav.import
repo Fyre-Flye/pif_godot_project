@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Negative Melody 02 - space voice pad.wav-0b468d96b11d3b35c8cf4fde84b0dc20.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Music/Negative/Retro Negative Melody 02 - space voice pad.wav"
+dest_files=[ "res://.import/Retro Negative Melody 02 - space voice pad.wav-0b468d96b11d3b35c8cf4fde84b0dc20.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

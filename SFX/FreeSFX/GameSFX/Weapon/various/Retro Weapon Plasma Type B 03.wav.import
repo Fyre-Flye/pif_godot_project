@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Weapon Plasma Type B 03.wav-51f87f40f5297b49a9065c721794af94.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Weapon/various/Retro Weapon Plasma Type B 03.wav"
+dest_files=[ "res://.import/Retro Weapon Plasma Type B 03.wav-51f87f40f5297b49a9065c721794af94.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

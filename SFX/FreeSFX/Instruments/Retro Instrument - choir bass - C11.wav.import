@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Instrument - choir bass - C11.wav-0f534b1bdd74047d10f91b0fc9952188.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/Instruments/Retro Instrument - choir bass - C11.wav"
+dest_files=[ "res://.import/Retro Instrument - choir bass - C11.wav-0f534b1bdd74047d10f91b0fc9952188.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

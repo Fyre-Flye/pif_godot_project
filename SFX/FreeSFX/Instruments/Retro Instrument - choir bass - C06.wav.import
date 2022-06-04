@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Instrument - choir bass - C06.wav-0c47f43f0262b291aecfdd9acad8b134.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/Instruments/Retro Instrument - choir bass - C06.wav"
+dest_files=[ "res://.import/Retro Instrument - choir bass - C06.wav-0c47f43f0262b291aecfdd9acad8b134.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

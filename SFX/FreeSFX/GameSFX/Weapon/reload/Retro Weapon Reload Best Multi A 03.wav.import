@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Weapon Reload Best Multi A 03.wav-b9712f75106ef6e0d321f8f5fb41230c.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Weapon/reload/Retro Weapon Reload Best Multi A 03.wav"
+dest_files=[ "res://.import/Retro Weapon Reload Best Multi A 03.wav-b9712f75106ef6e0d321f8f5fb41230c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

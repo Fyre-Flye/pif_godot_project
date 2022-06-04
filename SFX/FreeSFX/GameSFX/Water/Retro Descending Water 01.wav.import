@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Descending Water 01.wav-365ffa1d823c707fb7f37594a014390d.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Water/Retro Descending Water 01.wav"
+dest_files=[ "res://.import/Retro Descending Water 01.wav-365ffa1d823c707fb7f37594a014390d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

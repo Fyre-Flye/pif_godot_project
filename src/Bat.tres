@@ -7,5 +7,5 @@
 script = ExtResource( 2 )
 name = "BATTY"
 texture = ExtResource( 1 )
-health = 60
-damage = 20
+health = 50
+damage = 10

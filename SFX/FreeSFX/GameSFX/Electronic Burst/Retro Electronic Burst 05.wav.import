@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Electronic Burst 05.wav-48938307ccd8bdb7a49d909751091ce1.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Electronic Burst/Retro Electronic Burst 05.wav"
+dest_files=[ "res://.import/Retro Electronic Burst 05.wav-48938307ccd8bdb7a49d909751091ce1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

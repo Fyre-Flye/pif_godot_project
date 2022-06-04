@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Ascending Short 20.wav-8c5dac99453ab3a5462c02a32254d78a.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Ascending/Retro Ascending Short 20.wav"
+dest_files=[ "res://.import/Retro Ascending Short 20.wav-8c5dac99453ab3a5462c02a32254d78a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

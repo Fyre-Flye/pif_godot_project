@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Balloon Pop 1.wav-54b07a24fdeddbf62696c8bb3e21ba81.sample"
+
+[deps]
+
+source_file="res://SFX/sfx pack/Balloon Pop 1.wav"
+dest_files=[ "res://.import/Balloon Pop 1.wav-54b07a24fdeddbf62696c8bb3e21ba81.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

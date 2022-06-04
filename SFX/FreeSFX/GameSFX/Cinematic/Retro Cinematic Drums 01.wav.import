@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Cinematic Drums 01.wav-76228f680b963ac76fe99061fbbc75c9.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Cinematic/Retro Cinematic Drums 01.wav"
+dest_files=[ "res://.import/Retro Cinematic Drums 01.wav-76228f680b963ac76fe99061fbbc75c9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

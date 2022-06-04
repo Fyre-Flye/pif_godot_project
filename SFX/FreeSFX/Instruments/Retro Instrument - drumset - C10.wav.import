@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Instrument - drumset - C10.wav-aef2ffc62f3802a0f23686ad7b72ffcf.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/Instruments/Retro Instrument - drumset - C10.wav"
+dest_files=[ "res://.import/Retro Instrument - drumset - C10.wav-aef2ffc62f3802a0f23686ad7b72ffcf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Time Out.wav-900c372ed1fd77755a148a6a63180c0c.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/Voices/Time Out.wav"
+dest_files=[ "res://.import/Time Out.wav-900c372ed1fd77755a148a6a63180c0c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

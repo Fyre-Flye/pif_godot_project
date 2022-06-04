@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Crow 01.wav-829a7bea62184c556fa31de133a59bde.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Animal Insects/Retro Crow 01.wav"
+dest_files=[ "res://.import/Retro Crow 01.wav-829a7bea62184c556fa31de133a59bde.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

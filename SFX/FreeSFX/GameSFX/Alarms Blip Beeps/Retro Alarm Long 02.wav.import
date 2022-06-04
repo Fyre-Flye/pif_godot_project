@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Alarm Long 02.wav-b45a470ab5c28009eec5a00c3b5dad53.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Alarms Blip Beeps/Retro Alarm Long 02.wav"
+dest_files=[ "res://.import/Retro Alarm Long 02.wav-b45a470ab5c28009eec5a00c3b5dad53.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

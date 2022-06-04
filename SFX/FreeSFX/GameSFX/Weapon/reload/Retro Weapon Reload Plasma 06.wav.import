@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Weapon Reload Plasma 06.wav-da3eea4c6e9ac91de50a4c9d8deaa792.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Weapon/reload/Retro Weapon Reload Plasma 06.wav"
+dest_files=[ "res://.import/Retro Weapon Reload Plasma 06.wav-da3eea4c6e9ac91de50a4c9d8deaa792.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

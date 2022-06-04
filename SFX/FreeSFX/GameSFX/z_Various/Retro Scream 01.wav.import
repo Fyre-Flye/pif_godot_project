@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Scream 01.wav-6d98c8a649ff20db2b3969e4d00a4b28.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/z_Various/Retro Scream 01.wav"
+dest_files=[ "res://.import/Retro Scream 01.wav-6d98c8a649ff20db2b3969e4d00a4b28.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

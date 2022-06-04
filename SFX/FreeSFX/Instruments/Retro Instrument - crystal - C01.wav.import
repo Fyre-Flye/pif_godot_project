@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Instrument - crystal - C01.wav-0743c0eebada3bba56688e67ed59f8a6.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/Instruments/Retro Instrument - crystal - C01.wav"
+dest_files=[ "res://.import/Retro Instrument - crystal - C01.wav-0743c0eebada3bba56688e67ed59f8a6.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

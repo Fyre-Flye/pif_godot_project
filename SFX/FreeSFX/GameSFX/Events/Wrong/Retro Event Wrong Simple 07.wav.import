@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Event Wrong Simple 07.wav-09307dc40996bd82300411423be610ca.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/Events/Wrong/Retro Event Wrong Simple 07.wav"
+dest_files=[ "res://.import/Retro Event Wrong Simple 07.wav-09307dc40996bd82300411423be610ca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

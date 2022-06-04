@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Suck 1.wav-4cab4cd083d552eaa843a7f34505719e.sample"
+
+[deps]
+
+source_file="res://SFX/sfx pack/Suck 1.wav"
+dest_files=[ "res://.import/Suck 1.wav-4cab4cd083d552eaa843a7f34505719e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

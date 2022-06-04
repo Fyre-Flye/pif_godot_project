@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Musicaly 03 nananana.wav-f77b11b4c6435705ee7df2704a8e845a.sample"
+
+[deps]
+
+source_file="res://SFX/FreeSFX/GameSFX/z_Various/Retro Musicaly 03 nananana.wav"
+dest_files=[ "res://.import/Retro Musicaly 03 nananana.wav-f77b11b4c6435705ee7df2704a8e845a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
