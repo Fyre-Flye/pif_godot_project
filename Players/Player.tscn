@@ -233,11 +233,13 @@ animation = "IdleUp"
 blend_point_0/node = SubResource( 35 )
 blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 36 )
-blend_point_1/pos = Vector2( 0, 1 )
+blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 37 )
 blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 38 )
-blend_point_3/pos = Vector2( 0, -1 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=40]
@@ -256,11 +258,13 @@ animation = "MoveUP"
 blend_point_0/node = SubResource( 40 )
 blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 41 )
-blend_point_1/pos = Vector2( 0, 1 )
+blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 42 )
 blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 43 )
-blend_point_3/pos = Vector2( 0, -1 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=45]
