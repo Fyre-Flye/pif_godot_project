@@ -63,7 +63,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 8.0
+radius = 9.0
 height = 0.0
 
 [sub_resource type="Animation" id=31]
@@ -295,7 +295,7 @@ animation = "WalkUp"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 2 )
+position = Vector2( 0, 3 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
