@@ -26,16 +26,6 @@ animations = [ {
 "name": "IdleUp",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "IdleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ) ],
-"loop": true,
-"name": "IdleRight",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ), ExtResource( 12 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "WalkLeft",
@@ -46,6 +36,21 @@ animations = [ {
 "name": "IdleLeft",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "IdleRight",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "IdleDown",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "WalkDown",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 13 ), ExtResource( 10 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "WalkUp",
@@ -55,16 +60,11 @@ animations = [ {
 "loop": true,
 "name": "WalkRight",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "WalkDown",
-"speed": 10.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 9.00001
-height = 12.0
+radius = 8.0
+height = 0.0
 
 [sub_resource type="Animation" id=31]
 resource_name = "IdleDown"
@@ -295,7 +295,7 @@ animation = "WalkUp"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -6 )
+position = Vector2( 0, 2 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
