@@ -1,10 +1,11 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://src/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Fonts/Chikarego2.tres" type="DynamicFont" id=2]
 [ext_resource path="res://UI/pixel-city-resize.jpg" type="Texture" id=3]
 [ext_resource path="res://Shaders/BG-Animation_shader.tres" type="Shader" id=4]
 [ext_resource path="res://Fonts/ChiKareGo2.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://SFX/OST/One Fateful Nigh.wav" type="AudioStream" id=6]
 
 [sub_resource type="ShaderMaterial" id=3]
 shader = ExtResource( 4 )
@@ -82,32 +83,32 @@ margin_right = 320.0
 margin_bottom = 180.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 95.0
+margin_left = 81.0
 margin_top = 19.0
-margin_right = 225.0
+margin_right = 239.0
 margin_bottom = 161.0
 custom_constants/separation = 20
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_right = 130.0
+margin_right = 158.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 margin_top = 20.0
-margin_right = 130.0
+margin_right = 158.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 55, 0 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
-text = "Title Text"
+text = "NeastBound"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 70.0
-margin_right = 130.0
+margin_right = 158.0
 margin_bottom = 142.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 22.0
-margin_right = 108.0
+margin_left = 36.0
+margin_right = 122.0
 margin_bottom = 72.0
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
@@ -228,6 +229,10 @@ custom_styles/focus = SubResource( 23 )
 custom_styles/disabled = SubResource( 24 )
 custom_styles/normal = SubResource( 25 )
 text = "Exit"
+
+[node name="MainTitle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
 
 [connection signal="mouse_entered" from="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer/StartButton" to="." method="_on_StartButton_mouse_entered"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]

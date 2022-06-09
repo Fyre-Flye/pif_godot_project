@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/One Fateful Nigh.wav-ee276ec506c10f9fcbedaee16f2c133a.sample"
+
+[deps]
+
+source_file="res://SFX/OST/One Fateful Nigh.wav"
+dest_files=[ "res://.import/One Fateful Nigh.wav-ee276ec506c10f9fcbedaee16f2c133a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

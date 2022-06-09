@@ -11,6 +11,7 @@ var is_defending = false
 var current_selection = 0
 
 func _ready():
+	
 	set_current_selection(0)
 	set_health($BattleBG/Enemy/ProgressBarEnemy, enemy.health, enemy.health)
 	set_health($PlayerPanel/PlayerData/ProgressBarPlayer, State.current_health, State.max_health)

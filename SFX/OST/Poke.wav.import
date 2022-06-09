@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Poke.wav-93d497cf7fb77bbe5f6896bb6a072f66.sample"
+
+[deps]
+
+source_file="res://SFX/OST/Poke.wav"
+dest_files=[ "res://.import/Poke.wav-93d497cf7fb77bbe5f6896bb6a072f66.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
