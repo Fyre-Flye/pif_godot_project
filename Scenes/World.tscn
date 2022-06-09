@@ -311,10 +311,20 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -720902, 0, 0, -786432, 0, 0, -786426, 0, 0, -786420, 0, 0, -786414, 0, 0, -524294, 0, 0, -589824, 0, 0, -589818, 0, 0, -589812, 0, 0, -589806, 0, 0, -327686, 0, 0, -393216, 0, 0, -393210, 0, 0, -393204, 0, 0, -393198, 0, 0, 983033, 1, 0, 983039, 2, 0, 917505, 2, 0, 917507, 2, 0, 917509, 2, 0, 917511, 1, 0, 917517, 2, 0, 917519, 2, 0, 917521, 2, 0, 917523, 2, 0, 917525, 2, 0, 917527, 3, 0, 1245177, 1, 0, 1245183, 2, 0, 1179649, 2, 0, 1179651, 2, 0, 1179653, 2, 0, 1179655, 1, 0, 1179661, 2, 0, 1179663, 2, 0, 1179665, 2, 0, 1179667, 2, 0, 1179669, 2, 0, 1179671, 3, 0 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 62, 99 )
+current = true
+zoom = Vector2( 1.5, 1.5 )
+smoothing_enabled = true
+smoothing_speed = 10.0
+
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 62, 99 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
 
 [node name="PropMap" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
