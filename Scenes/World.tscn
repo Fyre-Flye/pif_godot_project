@@ -314,7 +314,7 @@ tile_data = PoolIntArray( -720902, 0, 0, -786432, 0, 0, -786426, 0, 0, -786420, 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 62, 99 )
+position = Vector2( 95, 96 )
 
 [node name="PropMap" type="TileMap" parent="."]
 tile_set = SubResource( 10 )
